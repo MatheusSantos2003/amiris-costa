@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'animate.css';
+
+
+:host{
+  font-family: 'Poppins', sans-serif;
+}

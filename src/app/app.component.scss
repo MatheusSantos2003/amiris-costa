@@ -1,0 +1,20 @@
+// o azul
+// #2a6287
+// rgba(44,97,137,255)
+
+
+
+// o verde
+// #3f927e
+// rgba(63,146,126,255)
+.custom-ul {
+  ul {
+    list-style-type: disc;
+    padding: 1px;
+  }
+
+  li::marker
+  {
+    color: gray;
+  }
+}
