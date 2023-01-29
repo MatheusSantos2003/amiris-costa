@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'amiris-costa';
+
+
+  itens = [
+    { descricao: 'Ansiedade' },
+    { descricao: 'Depressão'},
+    { descricao: 'Casais'},
+    { descricao: 'Compulsões'},
+    { descricao: 'Disfunções Sexuais'},
+    { descricao: 'Estresse'},
+    { descricao: 'Fobias'},
+    { descricao: 'Morte e luto'},
+    { descricao: 'Orientação Profissional'},
+    { descricao: 'TOC'}
+
+  ]
+
+
 }
