@@ -6,6 +6,23 @@
 
 @import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
-body{
-  font-family: 'Poppins', sans-serif;
+// body{
+//   font-family: 'Poppins', sans-serif;
+// }
+* {
+  font-family: "Bahnschrift";
 }
+
+@font-face {
+  font-family: './assets/fonts/Bahnschrift';
+  src: url('./assets/fonts/Bahnschrift.eot');
+  src: url('./assets/fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+      url('./assets/fonts/Bahnschrift.woff2') format('woff2'),
+      url('./assets/fonts/Bahnschrift.woff') format('woff'),
+      url('./assets/fonts/Bahnschrift.ttf') format('truetype'),
+      url('./assets/fonts/Bahnschrift.svg#Bahnschrift') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

@@ -2,10 +2,16 @@
   .gradient {
     /* background: linear-gradient(90deg, rgba(44,97,137,255) 0%, rgba(153,162,247,1) 100%); */
 
-    background: linear-gradient(
+    /* background: linear-gradient(
       90deg,
       rgba(44, 97, 137, 1) 0%,
       rgba(87, 122, 149, 1) 100%
+    ); */
+
+    background: linear-gradient(
+      90deg,
+      hsla(166, 40%, 41%, 1) 0%,
+      hsla(166, 50%, 77%, 1) 97%
     );
   }
 </style>
@@ -24,7 +30,7 @@
           <img
             alt="healt care icon"
             class="h-10"
-            src="assets/icons/mental-health.svg"
+            src="assets/icons/arvore.png"
           />
         </div>
         <span
@@ -59,26 +65,29 @@
             <button
               (click)="scrollTo('sobre')"
               class="inline-block py-2 px-4 text-black font-bold no-underline cursor-pointer"
-              >Sobre</button>
+            >
+              Sobre
+            </button>
           </li>
           <li class="mr-3">
             <button
               class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               (click)="scrollTo('formacoes')"
-              >Formações</button
             >
+              Formações
+            </button>
           </li>
           <li class="mr-3">
             <button
               (click)="scrollTo('abordagens')"
               class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-
-              >Abordagens</button
             >
+              Abordagens
+            </button>
           </li>
         </ul>
         <button
-        (click)=" whatsappClick()"
+          (click)="whatsappClick()"
           class="mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
           <div class="flex justify-between items-center gap-3">
@@ -163,9 +172,7 @@
         </g>
       </g>
     </svg>
-    <div id="sobre">
-
-    </div>
+    <div id="sobre"></div>
   </div>
   <section class="bg-white border-b py-8">
     <div class="container max-w-5xl mx-auto m-8">
@@ -188,35 +195,21 @@
             src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris-costa.jpg?alt=media&token=d7ca88ec-0291-4cdc-b7f5-6e2fc3bf97fc"
           />
         </div>
-        <div class="whitespace-pre-line max-w-2xl">
-          <span>
-            Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
-            em Gestão Estratégica de Pessoas, e Pós em Projetos Sociais e
-            Direitos Humanos.
-          </span>
-          <br />
-          <span>
-            realizei cursos extras de formação complementar nas áreas de
-            transtornos de personalidade, neuropsicologia, psicologia social, e
-            gestão/líder de si mesmo. Atuo auxiliando as pessoas a entrarem em
-            contato com conteúdos que fogem à sua compreensão. Por serem muitas
-            vezes conteúdos inconscientes, mas que interferem diretamente na sua
-            maneira de agir, pensar e sentir.
-          </span>
-          <br />
-          <span>
-            Que acabam se manifestando através da depressão, ansiedade, baixa
-            autoestima, insegurança, automutilação, transtornos alimentares,
-            entre diversas outras.
-          </span>
-          <br />
-          <span>
-            Procuro trabalhar para que os pacientes consigam lidar com seus
-            anseios, traumas, expectativas e barreiras impostas por elas mesmas
-            e pelo mundo, no seu autoconhecimento e desenvolvimento
-            pessoal/profissional, conectando-se consigo mesmo(a) e suas
-            aspirações.
-          </span>
+        <div class="whitespace-pre-line max-w-2xl text-justify">
+          Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
+          em Gestão Estratégica de Pessoas, e Pós em Projetos Sociais e Direitos
+          Humanos. Realizei cursos extras de formação complementar nas áreas de
+          transtornos de personalidade, neuropsicologia, psicologia social, e
+          gestão/líder de si mesmo. Atuo auxiliando as pessoas a entrarem em
+          contato com conteúdos que fogem à sua compreensão. Por serem muitas
+          vezes conteúdos inconscientes, mas que interferem diretamente na sua
+          maneira de agir, pensar e sentir. Que acabam se manifestando através
+          da depressão, ansiedade, baixa autoestima, insegurança, automutilação,
+          transtornos alimentares, entre diversas outras. Procuro trabalhar para
+          que os pacientes consigam lidar com seus anseios, traumas,
+          expectativas e barreiras impostas por elas mesmas e pelo mundo, no seu
+          autoconhecimento e desenvolvimento pessoal/profissional, conectando-se
+          consigo mesmo(a) e suas aspirações.
         </div>
       </div>
     </div>
@@ -250,9 +243,28 @@
     </div>
 
     <div class="container max-w-5xl mx-auto m-8">
-      <div class="flex justify-center items-center gap-8 py-8 text-gray-800">
-        <div class="whitespace-pre-line max-w-2xl custom-ul">
-          <ul class="flex flex-col gap-4">
+      <div
+        class="flex justify-center items-center gap-8 py-8 text-gray-800 custom-ul"
+      >
+        <div class="whitespace-pre-line max-w-2xl">
+          <div class="flex flex-col justify-center items-center gap-5">
+            <div class="my-4">
+              <ul>
+                <li>
+                  Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro -
+                  RJ,22260-080, Brasil.
+                </li>
+              </ul>
+            </div>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div *ngIf="apiLoaded">
+              <google-map [center]="center" [zoom]="zoom">
+                <map-marker [position]="markerPosition"> </map-marker>
+              </google-map>
+            </div>
+          </div>
+          <!-- <ul class="flex flex-col gap-4">
             <li>
               Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
               22260-080, Brasil
@@ -261,18 +273,43 @@
               BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
               16 portaria B sala 217
             </li>
-          </ul>
+          </ul> -->
+        </div>
+        <div class="whitespace-pre-line max-w-2xl">
+          <div class="flex flex-col justify-center items-center gap-5">
+            <div class="my-4">
+              <ul>
+                <li>
+                  BARRA DA TIJUCA,Shopping Downtown, Avenida das Américas, 500,
+                  bloco 16, portaria B, sala 217.
+                </li>
+              </ul>
+            </div>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div *ngIf="apiLoaded">
+              <google-map [center]="center2" [zoom]="zoom2">
+                <map-marker [position]="markerPosition2"></map-marker>
+              </google-map>
+            </div>
+          </div>
+          <!-- <ul class="flex flex-col gap-4">
+            <li>
+              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
+              22260-080, Brasil
+            </li>
+            <li>
+              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
+              16 portaria B sala 217
+            </li>
+          </ul> -->
         </div>
       </div>
     </div>
-    <div id="formacoes">
-
-    </div>
+    <div id="formacoes"></div>
   </section>
 
-
-  <section class="bg-white border-b py-8"  >
-
+  <section class="bg-white border-b py-8">
     <h2
       class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
     >
@@ -280,7 +317,6 @@
     </h2>
     <div class="w-full mb-4">
       <div
-
         class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
       ></div>
     </div>
@@ -302,9 +338,7 @@
         </div>
       </div>
     </div>
-    <div id="abordagens">
-
-    </div>
+    <div id="abordagens"></div>
   </section>
 
   <section class="bg-white border-b py-8">
@@ -319,16 +353,16 @@
       ></div>
     </div>
 
-    <div class="flex flex-col justify-center items-center text-blue-300 gap-7">
+    <div class="flex flex-col justify-center items-center color-primary gap-7">
       <div class="custom-container">
-        <div class="mx-2 rounded-lg p-5 border-2 text-center border-blue-300">
+        <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
           <p>Análise do Comportamento | Behaviorismo</p>
         </div>
-        <div class="mx-2 rounded-lg p-5 text-center border-2 border-blue-300">
+        <div class="mx-2 rounded-lg p-5 text-center border-2 border-primary">
           <p>Humanista</p>
         </div>
       </div>
-      <div class="p-5 rounded-lg text-center border-2 border-blue-300">
+      <div class="p-5 rounded-lg text-center border-2 border-primary">
         <p>Terapia Cognitivo Comportamental</p>
       </div>
     </div>
@@ -509,7 +543,7 @@
     <br />
     <p>Para aqueles que possuem convênio emito recibo de reembolso.</p>
     <button
-    (click)=" whatsappClick()"
+      (click)="whatsappClick()"
       class="mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
     >
       <div class="flex justify-between items-center gap-3">
@@ -542,7 +576,7 @@
             <img
               alt="healt care icon"
               class="h-10"
-              src="assets/icons/mental-health.svg"
+              src="assets/icons/arvore.png"
             />
           </div>
           <span

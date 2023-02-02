@@ -2,11 +2,23 @@
 // #2a6287
 // rgba(44,97,137,255)
 
+// o verde
+// #3f927e
+// rgba(63,146,126,255)
+
+
+
 .bg-primary {
-  background-color:  #2a6287;
+  background-color: #3f927e;
 }
 
+.color-primary {
+  color: #3f927e;
+}
 
+.border-primary {
+  border: 1px solid #3f927e;
+}
 
 .custom-container {
   display: grid;
@@ -14,20 +26,16 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
-  grid-template-areas:
-    ". .";
+  grid-template-areas: ". .";
 }
-// o verde
-// #3f927e
-// rgba(63,146,126,255)
+
 .custom-ul {
   ul {
     list-style-type: disc;
     padding: 1px;
   }
 
-  li::marker
-  {
+  li::marker {
     color: gray;
   }
 }
