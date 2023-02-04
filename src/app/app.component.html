@@ -109,11 +109,15 @@
         class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
       >
         <!-- <p class="uppercase tracking-loose w-full"></p> -->
+
+
+
         <h1 class="text-5xl font-bold">Amiris Costa</h1>
-        <h2 class="text-2xl">CRP 06/119810</h2>
+        <h2 class="text-2xl">Psicólogo Clinico</h2>
         <h3 class="text-1xl">
-          Estava a procura de psicólogo? Sua procura acabou.
+          CRP 06/119810
         </h3>
+        <blockquote>Seja tudo aquilo que quiser ser!!!</blockquote>
 
         <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Subscribe
@@ -121,7 +125,7 @@
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
-        <div class="ml-60 py-9">
+        <div class="md:ml-60 py-9">
           <img
             class="rounded-full"
             alt="Dr. Amiris Costa"
@@ -174,7 +178,7 @@
     </svg>
     <div id="sobre"></div>
   </div>
-  <section class="bg-white border-b py-8">
+  <section class="bg-white border-b py-8 px-4 sm:px-0 md:px-0 lg:px-0">
     <div class="container max-w-5xl mx-auto m-8">
       <h2
         class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -186,16 +190,17 @@
           class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
         ></div>
       </div>
-      <div class="flex justify-between items-center gap-8 text-gray-800">
-        <div>
+      <div class="flex flex-col  md:flex-row justify-between items-center  gap-12 sm:gap-8 md:gap-8 lg:gap-8 text-gray-800">
+        <div class="order-2 sm:order-1 md:order-1">
           <img
             alt="Dr. Amiris Costa"
+            class="w-52 h-52  md:w-full md:h-full"
             width="400"
             height="400"
             src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris-costa.jpg?alt=media&token=d7ca88ec-0291-4cdc-b7f5-6e2fc3bf97fc"
           />
         </div>
-        <div class="whitespace-pre-line max-w-2xl text-justify">
+        <div class="order-1 sm:order-2 md:order-2 whitespace-pre-line max-w-2xl text-justify">
           Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
           em Gestão Estratégica de Pessoas, e Pós em Projetos Sociais e Direitos
           Humanos. Realizei cursos extras de formação complementar nas áreas de
@@ -215,101 +220,9 @@
     </div>
   </section>
 
-  <section class="bg-white border-b py-8">
-    <!-- <h4
-      class="w-full my-2 text-5xl font-medium leading-tight text-center text-gray-800"
-    >
 
-    </h4>
-    <div class="w-full mb-10">
-      <div
-        class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-      ></div>
-    </div> -->
 
-    <h2
-      class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-    >
-      Endereços:
-    </h2>
-    <div class="w-full mb-4">
-      <div
-        class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-      ></div>
-    </div>
-
-    <div class="flex justify-center items-center text-black mt-5 pt-5">
-      <h4 class="text-3xl">Atendo nos seguintes Endereços:</h4>
-    </div>
-
-    <div class="container max-w-5xl mx-auto m-8">
-      <div
-        class="flex justify-center items-center gap-8 py-8 text-gray-800 custom-ul"
-      >
-        <div class="whitespace-pre-line max-w-2xl">
-          <div class="flex flex-col justify-center items-center gap-5">
-            <div class="my-4">
-              <ul>
-                <li>
-                  Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro -
-                  RJ,22260-080, Brasil.
-                </li>
-              </ul>
-            </div>
-
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-            <div *ngIf="apiLoaded">
-              <google-map [center]="center" [zoom]="zoom">
-                <map-marker [position]="markerPosition"> </map-marker>
-              </google-map>
-            </div>
-          </div>
-          <!-- <ul class="flex flex-col gap-4">
-            <li>
-              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
-              22260-080, Brasil
-            </li>
-            <li>
-              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
-              16 portaria B sala 217
-            </li>
-          </ul> -->
-        </div>
-        <div class="whitespace-pre-line max-w-2xl">
-          <div class="flex flex-col justify-center items-center gap-5">
-            <div class="my-4">
-              <ul>
-                <li>
-                  BARRA DA TIJUCA,Shopping Downtown, Avenida das Américas, 500,
-                  bloco 16, portaria B, sala 217.
-                </li>
-              </ul>
-            </div>
-
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-            <div *ngIf="apiLoaded">
-              <google-map [center]="center2" [zoom]="zoom2">
-                <map-marker [position]="markerPosition2"></map-marker>
-              </google-map>
-            </div>
-          </div>
-          <!-- <ul class="flex flex-col gap-4">
-            <li>
-              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
-              22260-080, Brasil
-            </li>
-            <li>
-              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
-              16 portaria B sala 217
-            </li>
-          </ul> -->
-        </div>
-      </div>
-    </div>
-    <div id="formacoes"></div>
-  </section>
-
-  <section class="bg-white border-b py-8">
+  <section class="bg-white border-b py-8 px-5 sm:px-0 md:px-0 lg:px-0">
     <h2
       class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
     >
@@ -321,11 +234,11 @@
       ></div>
     </div>
     <div class="container max-w-5xl mx-auto m-8">
-      <div class="flex justify-between items-center gap-8 py-8 text-gray-800">
-        <div class="whitespace-pre-line max-w-2xl custom-ul">
+      <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center sm:justify-between sm:items-center md:justify-between md:items-center lg:justify-between lg:items-center gap-8 py-8 text-gray-800">
+        <div class="mx-4 whitespace-pre-line max-w-full sm:max-w-2xl md:max-w-2xl lg:max-w-2xl custom-ul">
           <ul class="flex flex-col gap-4">
-            <li>MBA em Gestão Estratégica de Pessoas na FMU</li>
             <li>Graduado em Psicologia pela FSP</li>
+            <li>MBA em Gestão Estratégica de Pessoas na FMU</li>
             <li>Pós Graduado em Terapia Cognitivo Comportamental pelo IPCS</li>
             <li>
               Pós Graduado em Projetos Sociais e Direitos Humanos pelo ANHEMBI
@@ -334,7 +247,7 @@
           </ul>
         </div>
         <div>
-          <img width="400" height="400" src="assets/icons/education.svg" />
+          <img width="400" height="400" alt="Educacao"  src="assets/icons/education.svg" />
         </div>
       </div>
     </div>
@@ -353,7 +266,7 @@
       ></div>
     </div>
 
-    <div class="flex flex-col justify-center items-center color-primary gap-7">
+    <div class="hidden sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-col justify-center items-center color-primary gap-7">
       <div class="custom-container">
         <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
           <p>Análise do Comportamento | Behaviorismo</p>
@@ -363,6 +276,18 @@
         </div>
       </div>
       <div class="p-5 rounded-lg text-center border-2 border-primary">
+        <p>Terapia Cognitivo Comportamental</p>
+      </div>
+    </div>
+
+    <div class="flex flex-col sm:hidden  md:hidden  lg:hidden justify-center items-center color-primary gap-7">
+      <div class="mx-4 w-72 rounded-lg p-5 border-2 text-center border-primary">
+        <p>Análise do Comportamento | Behaviorismo</p>
+      </div>
+      <div class="mx-2  w-72 rounded-lg p-5 text-center border-2 border-primary">
+        <p>Humanista</p>
+      </div>
+      <div class="mx-2  w-72 rounded-lg p-5 text-center border-2 border-primary">
         <p>Terapia Cognitivo Comportamental</p>
       </div>
     </div>
@@ -397,97 +322,113 @@
           style="min-width: 150px"
           *ngFor="let item of itens"
         >
-          <a class=" "> {{ item.descricao }} </a>
+          <span class=" "> {{ item.descricao }} </span>
         </div>
       </div>
-      <!-- <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div
-          class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-        >
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
-            </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
-            </p>
-          </a>
-        </div>
-        <div
-          class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-        >
-          <div class="flex items-center justify-start">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
-              Action
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div
-          class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-        >
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
-            </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
-            </p>
-          </a>
-        </div>
-        <div
-          class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-        >
-          <div class="flex items-center justify-center">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
-              Action
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-        <div
-          class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-        >
-          <a href="#" class="flex flex-wrap no-underline hover:no-underline">
-            <p class="w-full text-gray-600 text-xs md:text-sm px-6">
-              xGETTING STARTED
-            </p>
-            <div class="w-full font-bold text-xl text-gray-800 px-6">
-              Lorem ipsum dolor sit amet.
-            </div>
-            <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              at ipsum eu nunc commodo posuere et sit amet ligula.
-            </p>
-          </a>
-        </div>
-        <div
-          class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
-        >
-          <div class="flex items-center justify-end">
-            <button
-              class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-            >
-              Action
-            </button>
-          </div>
-        </div>
-      </div> -->
+
     </div>
+  </section>
+
+  <section class="bg-white border-b py-8">
+
+
+    <h2
+      class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+    >
+      Endereços:
+    </h2>
+    <div class="w-full mb-4">
+      <div
+        class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+      ></div>
+    </div>
+
+    <div class="flex justify-center items-center text-black mt-5 pt-5 text-center">
+      <h4 class="text-3xl">Atendimento Online e presencial nos endereços abaixo:</h4>
+    </div>
+
+    <div class="container max-w-5xl mx-auto m-8">
+      <div
+        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center gap-8 py-8 text-gray-800 custom-ul"
+      >
+        <div class="whitespace-pre-line max-w-2xl">
+          <div class="flex flex-col justify-center items-center gap-5">
+            <div class="mx-5 sm:my-4 md:my-4 lg:my-4">
+              <ul>
+                <li>
+                  Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro -
+                  RJ,22260-080, Brasil.
+                </li>
+              </ul>
+            </div>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div *ngIf="apiLoaded"  class="hidden sm:inline md:inline lg:inline">
+              <google-map [center]="center" [zoom]="zoom">
+                <map-marker [position]="markerPosition"> </map-marker>
+              </google-map>
+            </div>
+
+            <div *ngIf="apiLoaded"  class=" sm:hidden md:hidden lg:hidden">
+              <google-map [center]="center" height="200" width="300" [zoom]="zoom">
+                <map-marker [position]="markerPosition"> </map-marker>
+              </google-map>
+            </div>
+
+          </div>
+          <!-- <ul class="flex flex-col gap-4">
+            <li>
+              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
+              22260-080, Brasil
+            </li>
+            <li>
+              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
+              16 portaria B sala 217
+            </li>
+          </ul> -->
+        </div>
+        <div class="whitespace-pre-line max-w-2xl">
+          <div class="flex flex-col justify-center items-center gap-5">
+            <div class="mx-5 sm:my-4 md:my-4 lg:my-4">
+              <ul>
+                <li>
+                  BARRA DA TIJUCA,Shopping Downtown, Avenida das Américas, 500,
+                  bloco 16, portaria B, sala 217.
+                </li>
+              </ul>
+            </div>
+
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <div *ngIf="apiLoaded" class="hidden sm:inline md:inline lg:inline">
+              <google-map [center]="center2" [zoom]="zoom2">
+                <map-marker [position]="markerPosition2"></map-marker>
+              </google-map>
+            </div>
+
+            <div *ngIf="apiLoaded" class=" sm:hidden md:hidden lg:hidden">
+              <google-map [center]="center2" height="200" width="300" [zoom]="zoom2">
+                <map-marker [position]="markerPosition2"></map-marker>
+              </google-map>
+            </div>
+
+
+          </div>
+          <!-- <ul class="flex flex-col gap-4">
+            <li>
+              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
+              22260-080, Brasil
+            </li>
+            <li>
+              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
+              16 portaria B sala 217
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+
+    <div id="formacoes"></div>
   </section>
 
   <!-- Change the colour #f8fafc to match the previous section colour -->
