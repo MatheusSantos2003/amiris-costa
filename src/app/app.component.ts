@@ -21,6 +21,8 @@ export class AppComponent implements OnInit {
   itens = [
     { descricao: 'Ansiedade' },
     { descricao: 'Depressão' },
+    { descricao: 'TDHA'},
+    { descricao: 'Relações familiares'},
     { descricao: 'Casais' },
     { descricao: 'Compulsões' },
     { descricao: 'Disfunções Sexuais' },
