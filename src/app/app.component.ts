@@ -60,6 +60,10 @@ export class AppComponent implements OnInit {
     window.open('https://wa.me/+5511948081340/?text=Ola%2C%20vim%20pelo%20seu%20site%2C%20e%20gostaria%20de%20marcar%20uma%20consulta%20ou%20conhecer%20mais%20sobre%20seus%20servicos!', '_blank');
   }
 
+  instagramClick() {
+    window.open('https://www.instagram.com/amiriscosta_psico/','_blank')
+  }
+
   scrollTo(id: string) {
     const element = document.getElementById(id);
 

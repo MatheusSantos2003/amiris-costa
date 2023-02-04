@@ -14,6 +14,10 @@
       hsla(166, 50%, 77%, 1) 97%
     );
   }
+
+  .button-gradient {
+    background-image: linear-gradient(to right top, #feda75, #fdcb61, #fcba4e, #fcaa3d, #fb982e, #fd872f, #fd7633, #fc6439, #f8514a, #f1405a, #e53268, #d62976);
+  }
 </style>
 
 <div class="leading-normal tracking-normal text-white gradient">
@@ -87,6 +91,14 @@
           </li>
         </ul>
         <button
+        (click)="instagramClick()"
+        class="mx-auto button-gradient py-2 px-4 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <div class="flex justify-between items-center gap-3 text-white">
+            <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+            <p>Instagram</p>
+          </div>
+        </button>
+        <button
           (click)="whatsappClick()"
           class="mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
@@ -95,6 +107,7 @@
             <p>WhatsApp</p>
           </div>
         </button>
+
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -268,16 +281,17 @@
 
     <div class="hidden sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-col justify-center items-center color-primary gap-7">
       <div class="custom-container">
-        <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
-          <p>Análise do Comportamento | Behaviorismo</p>
+        <div class="p-5 rounded-lg text-center border-2 border-primary">
+          <p>Terapia Cognitivo Comportamental</p>
         </div>
         <div class="mx-2 rounded-lg p-5 text-center border-2 border-primary">
           <p>Humanista</p>
         </div>
+        <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
+          <p>Análise do Comportamento | Behaviorismo</p>
+        </div>
       </div>
-      <div class="p-5 rounded-lg text-center border-2 border-primary">
-        <p>Terapia Cognitivo Comportamental</p>
-      </div>
+
     </div>
 
     <div class="flex flex-col sm:hidden  md:hidden  lg:hidden justify-center items-center color-primary gap-7">
@@ -292,14 +306,6 @@
       </div>
     </div>
 
-    <!-- <div class="flex justify-center items-center gap-24 text-black">
-        <div class="flex m-5 p-5 border border-blue-300">Análise do Comportamento | Behaviorismo</div>
-        <div class="flex m-5 p-5 border border-blue-300">Humanista</div>
-      </div>
-
-      <div class="flex justify-center items-center gap-24 m-5 p-5 border border-blue-300 text-black">
-        <div class="flex">Terapia Cognitivo Comportamental</div>
-      </div> -->
   </section>
 
   <section class="bg-white border-b py-8">
@@ -483,26 +489,42 @@
     <p>Atendo Adultos, Adolescentes, Idosos e Casais.</p>
     <br />
     <p>Para aqueles que possuem convênio emito recibo de reembolso.</p>
-    <button
-      (click)="whatsappClick()"
-      class="mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-    >
-      <div class="flex justify-between items-center gap-3">
-        <i class="bi bi-whatsapp" style="font-size: 2rem"></i>
-        <p>WhatsApp</p>
-      </div>
-    </button>
+
+    <div class="flex justify-center items-center w-full">
+      <button
+      (click)="instagramClick()"
+      class="button-gradient my-6 py-4 px-8 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <div class="flex justify-between items-center gap-3 text-white">
+          <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+          <p>Instagram</p>
+        </div>
+      </button>
+      <button
+        (click)="whatsappClick()"
+        class=" lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      >
+        <div class="flex justify-between items-center gap-3">
+          <i class="bi bi-whatsapp" style="font-size: 2rem"></i>
+          <p>WhatsApp</p>
+        </div>
+      </button>
+    </div>
+
   </section>
   <!--Footer-->
   <footer class="bg-gray-100 h-full text-black pt-5">
-    <div class="flex justify-between px-5">
-      <div class="px-5 justify-start items-center">
+    <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-center px-3 gap-4">
+      <div class="px-5 justify-start">
         <span>Contatos:</span>
 
         <div class="flex flex-col justify-start items-start">
           <div>
             <i class="bi bi-envelope-at"></i>
             amiris.antonio@gmail.com
+          </div>
+          <div class="cursor-pointer" (click)="instagramClick()">
+            <i class="bi bi-instagram"></i>
+            amiriscosta_psico
           </div>
           <div>
             <i class="bi bi-whatsapp text-green-500"></i>
