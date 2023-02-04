@@ -16,7 +16,21 @@
   }
 
   .button-gradient {
-    background-image: linear-gradient(to right top, #feda75, #fdcb61, #fcba4e, #fcaa3d, #fb982e, #fd872f, #fd7633, #fc6439, #f8514a, #f1405a, #e53268, #d62976);
+    background-image: linear-gradient(
+      to right top,
+      #feda75,
+      #fdcb61,
+      #fcba4e,
+      #fcaa3d,
+      #fb982e,
+      #fd872f,
+      #fd7633,
+      #fc6439,
+      #f8514a,
+      #f1405a,
+      #e53268,
+      #d62976
+    );
   }
 </style>
 
@@ -91,10 +105,11 @@
           </li>
         </ul>
         <button
-        (click)="instagramClick()"
-        class="mx-auto button-gradient py-2 px-4 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          (click)="instagramClick()"
+          class="mx-auto button-gradient py-2 px-4 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        >
           <div class="flex justify-between items-center gap-3 text-white">
-            <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+            <i class="bi bi-instagram" style="font-size: 2rem"></i>
             <p>Instagram</p>
           </div>
         </button>
@@ -107,7 +122,6 @@
             <p>WhatsApp</p>
           </div>
         </button>
-
       </div>
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
@@ -123,13 +137,9 @@
       >
         <!-- <p class="uppercase tracking-loose w-full"></p> -->
 
-
-
         <h1 class="text-5xl font-bold">Amiris Costa</h1>
         <h2 class="text-2xl">Psicólogo Clinico</h2>
-        <h3 class="text-1xl">
-          CRP 06/119810
-        </h3>
+        <h3 class="text-1xl">CRP 06/119810</h3>
         <blockquote>Seja tudo aquilo que quiser ser!!!</blockquote>
 
         <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
@@ -203,17 +213,21 @@
           class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
         ></div>
       </div>
-      <div class="flex flex-col  md:flex-row justify-between items-center  gap-12 sm:gap-8 md:gap-8 lg:gap-8 text-gray-800">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-12 sm:gap-8 md:gap-8 lg:gap-8 text-gray-800"
+      >
         <div class="order-2 sm:order-1 md:order-1">
           <img
             alt="Dr. Amiris Costa"
-            class="w-52 h-52  md:w-full md:h-full"
+            class="w-52 h-52 md:w-full md:h-full"
             width="400"
             height="400"
             src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris-costa.jpg?alt=media&token=d7ca88ec-0291-4cdc-b7f5-6e2fc3bf97fc"
           />
         </div>
-        <div class="order-1 sm:order-2 md:order-2 whitespace-pre-line max-w-2xl text-justify">
+        <div
+          class="order-1 sm:order-2 md:order-2 whitespace-pre-line max-w-2xl text-justify"
+        >
           Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
           em Gestão Estratégica de Pessoas, e Pós em Projetos Sociais e Direitos
           Humanos. Realizei cursos extras de formação complementar nas áreas de
@@ -233,8 +247,6 @@
     </div>
   </section>
 
-
-
   <section class="bg-white border-b py-8 px-5 sm:px-0 md:px-0 lg:px-0">
     <h2
       class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -247,8 +259,12 @@
       ></div>
     </div>
     <div class="container max-w-5xl mx-auto m-8">
-      <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center sm:justify-between sm:items-center md:justify-between md:items-center lg:justify-between lg:items-center gap-8 py-8 text-gray-800">
-        <div class="mx-4 whitespace-pre-line max-w-full sm:max-w-2xl md:max-w-2xl lg:max-w-2xl custom-ul">
+      <div
+        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center sm:justify-between sm:items-center md:justify-between md:items-center lg:justify-between lg:items-center gap-8 py-8 text-gray-800"
+      >
+        <div
+          class="mx-4 whitespace-pre-line max-w-full sm:max-w-2xl md:max-w-2xl lg:max-w-2xl custom-ul"
+        >
           <ul class="flex flex-col gap-4">
             <li>Graduado em Psicologia pela FSP</li>
             <li>MBA em Gestão Estratégica de Pessoas na FMU</li>
@@ -260,7 +276,12 @@
           </ul>
         </div>
         <div>
-          <img width="400" height="400" alt="Educacao"  src="assets/icons/education.svg" />
+          <img
+            width="400"
+            height="400"
+            alt="Educacao"
+            src="assets/icons/education.svg"
+          />
         </div>
       </div>
     </div>
@@ -279,7 +300,9 @@
       ></div>
     </div>
 
-    <div class="hidden sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-col justify-center items-center color-primary gap-7">
+    <div
+      class="hidden sm:flex sm:flex-col md:flex md:flex-col lg:flex lg:flex-col justify-center items-center color-primary gap-7"
+    >
       <div class="custom-container">
         <div class="p-5 rounded-lg text-center border-2 border-primary">
           <p>Terapia Cognitivo Comportamental</p>
@@ -287,25 +310,26 @@
         <div class="mx-2 rounded-lg p-5 text-center border-2 border-primary">
           <p>Humanista</p>
         </div>
-        <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
-          <p>Análise do Comportamento | Behaviorismo</p>
-        </div>
       </div>
-
-    </div>
-
-    <div class="flex flex-col sm:hidden  md:hidden  lg:hidden justify-center items-center color-primary gap-7">
-      <div class="mx-4 w-72 rounded-lg p-5 border-2 text-center border-primary">
-        <div class="mx-2  w-72 rounded-lg p-5 text-center border-2 border-primary">
-          <p>Terapia Cognitivo Comportamental</p>
-        </div>
+      <div class="mx-2 rounded-lg p-5 border-2 text-center border-primary">
         <p>Análise do Comportamento | Behaviorismo</p>
       </div>
-      <div class="mx-2  w-72 rounded-lg p-5 text-center border-2 border-primary">
-        <p>Humanista</p>
-      </div>
     </div>
 
+    <div
+      class="flex flex-col sm:hidden md:hidden lg:hidden justify-center items-center color-primary gap-7"
+    >
+      <div class="mx-2 w-72 rounded-lg p-5 text-center border-2 border-primary">
+        <p>3Terapia Cognitivo Comportamental</p>
+      </div>
+      <div class="mx-2 w-72 rounded-lg p-5 text-center border-2 border-primary">
+        <p>2Humanista</p>
+      </div>
+
+      <div class="mx-2 w-72 rounded-lg p-5 text-center border-2 border-primary">
+        <p>1Análise do Comportamento | Behaviorismo</p>
+      </div>
+    </div>
   </section>
 
   <section class="bg-white border-b py-8">
@@ -331,13 +355,10 @@
           <span class=" "> {{ item.descricao }} </span>
         </div>
       </div>
-
     </div>
   </section>
 
   <section class="bg-white border-b py-8">
-
-
     <h2
       class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
     >
@@ -349,8 +370,12 @@
       ></div>
     </div>
 
-    <div class="flex justify-center items-center text-black mt-5 pt-5 text-center">
-      <h4 class="text-3xl">Atendimento Online e presencial nos endereços abaixo:</h4>
+    <div
+      class="flex justify-center items-center text-black mt-5 pt-5 text-center"
+    >
+      <h4 class="text-3xl">
+        Atendimento Online e presencial nos endereços abaixo:
+      </h4>
     </div>
 
     <div class="container max-w-5xl mx-auto m-8">
@@ -369,18 +394,22 @@
             </div>
 
             <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-            <div *ngIf="apiLoaded"  class="hidden sm:inline md:inline lg:inline">
+            <div *ngIf="apiLoaded" class="hidden sm:inline md:inline lg:inline">
               <google-map [center]="center" [zoom]="zoom">
                 <map-marker [position]="markerPosition"> </map-marker>
               </google-map>
             </div>
 
-            <div *ngIf="apiLoaded"  class=" sm:hidden md:hidden lg:hidden">
-              <google-map [center]="center" height="200" width="300" [zoom]="zoom">
+            <div *ngIf="apiLoaded" class="sm:hidden md:hidden lg:hidden">
+              <google-map
+                [center]="center"
+                height="200"
+                width="300"
+                [zoom]="zoom"
+              >
                 <map-marker [position]="markerPosition"> </map-marker>
               </google-map>
             </div>
-
           </div>
           <!-- <ul class="flex flex-col gap-4">
             <li>
@@ -411,13 +440,16 @@
               </google-map>
             </div>
 
-            <div *ngIf="apiLoaded" class=" sm:hidden md:hidden lg:hidden">
-              <google-map [center]="center2" height="200" width="300" [zoom]="zoom2">
+            <div *ngIf="apiLoaded" class="sm:hidden md:hidden lg:hidden">
+              <google-map
+                [center]="center2"
+                height="200"
+                width="300"
+                [zoom]="zoom2"
+              >
                 <map-marker [position]="markerPosition2"></map-marker>
               </google-map>
             </div>
-
-
           </div>
           <!-- <ul class="flex flex-col gap-4">
             <li>
@@ -432,7 +464,6 @@
         </div>
       </div>
     </div>
-
 
     <div id="formacoes"></div>
   </section>
@@ -492,16 +523,17 @@
 
     <div class="flex justify-center items-center w-full">
       <button
-      (click)="instagramClick()"
-      class="button-gradient my-6 py-4 px-8 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        (click)="instagramClick()"
+        class="button-gradient my-6 py-4 px-8 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      >
         <div class="flex justify-between items-center gap-3 text-white">
-          <i class="bi bi-instagram" style="font-size: 2rem;"></i>
+          <i class="bi bi-instagram" style="font-size: 2rem"></i>
           <p>Instagram</p>
         </div>
       </button>
       <button
         (click)="whatsappClick()"
-        class=" lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        class="lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
       >
         <div class="flex justify-between items-center gap-3">
           <i class="bi bi-whatsapp" style="font-size: 2rem"></i>
@@ -509,11 +541,12 @@
         </div>
       </button>
     </div>
-
   </section>
   <!--Footer-->
   <footer class="bg-gray-100 h-full text-black pt-5">
-    <div class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-center px-3 gap-4">
+    <div
+      class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-between items-center px-3 gap-4"
+    >
       <div class="px-5 justify-start">
         <span>Contatos:</span>
 
