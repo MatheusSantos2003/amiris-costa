@@ -18,6 +18,8 @@ export class AppComponent implements OnInit {
   zoom = 15;
   zoom2 = 15;
 
+  openDropDown = false;
+
   itens = [
     { descricao: 'Ansiedade' },
     { descricao: 'Depressão' },
@@ -63,15 +65,65 @@ export class AppComponent implements OnInit {
   }
 
   instagramClick() {
-    window.open('https://www.instagram.com/amiriscosta_psico/','_blank')
+    window.open('https://www.instagram.com/amiriscosta_psi/','_blank')
+  }
+
+  linktreeClick(){
+    window.open('https://linktr.ee/amiriscosta/','_blank')
   }
 
   scrollTo(id: string) {
+    this.onMenuTogleClick();
     const element = document.getElementById(id);
 
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  isMobileScreen() : boolean {
+    return window.innerWidth <= 600;
+  }
+
+  onMenuTogleClick(){
+
+  /*Toggle dropdown list*/
+  /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+  var navMenuDiv = document.getElementById("nav-content");
+  var navMenu = document.getElementById("nav-toggle");
+
+  document.onclick = check;
+  function check(e:any) {
+    var target = (e && e.target) || (event && event.srcElement);
+
+    //Nav Menu
+    if (!checkParent(target, navMenuDiv)) {
+      // click NOT on the menu
+      if (checkParent(target, navMenu)) {
+        // click on the link
+        if (navMenuDiv?.classList.contains("hidden")) {
+          navMenuDiv?.classList.remove("hidden");
+        } else {
+          navMenuDiv?.classList.add("hidden");
+        }
+      } else {
+        // click both outside link and outside menu, hide menu
+        navMenuDiv?.classList.add("hidden");
+      }
+    }
+  }
+
+  function checkParent(t:any, elm:any) {
+    while (t.parentNode) {
+      if (t == elm) {
+        return true;
+      }
+      t = t.parentNode;
+    }
+    return false;
+  }
+
   }
 
 }

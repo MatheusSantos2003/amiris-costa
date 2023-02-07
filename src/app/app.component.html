@@ -61,6 +61,7 @@
       </div>
       <div class="block lg:hidden pr-4">
         <button
+         (click)="onMenuTogleClick()"
           id="nav-toggle"
           class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
@@ -75,6 +76,7 @@
         </button>
       </div>
       <div
+
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
         id="nav-content"
       >
@@ -103,19 +105,28 @@
               Abordagens
             </button>
           </li>
+          <li class="mr-3">
+            <button
+              (click)="scrollTo('contato')"
+              class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+            >
+              Contato
+            </button>
+          </li>
+          <li class="mr-3">
+            <button
+              (click)="scrollTo('enderecos')"
+              class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+            >
+              Endereços
+            </button>
+          </li>
         </ul>
-        <button
-          (click)="instagramClick()"
-          class="mx-auto button-gradient py-2 px-4 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-        >
-          <div class="flex justify-between items-center gap-3 text-white">
-            <i class="bi bi-instagram" style="font-size: 2rem"></i>
-            <p>Instagram</p>
-          </div>
-        </button>
+
         <button
           (click)="whatsappClick()"
-          class="mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+
+          class=" hidden sm:inline md:inline lg:inline  mx-auto lg:mx-0 hover:underline bg-green-500 text-white font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
         >
           <div class="flex justify-between items-center gap-3">
             <i class="bi bi-whatsapp" style="font-size: 2rem"></i>
@@ -142,6 +153,10 @@
         <h3 class="text-1xl">CRP 06/119810</h3>
         <blockquote>Seja tudo aquilo que quiser ser!!!</blockquote>
 
+        <button (click)="scrollTo('contato')" class="my-4 p-4 bg-white text-green-500 rounded-full">
+          Entre em contato!
+        </button>
+
         <!-- <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Subscribe
         </button> -->
@@ -155,7 +170,7 @@
             width="400"
             height="400"
             loading="lazy"
-            src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris-costa.jpg?alt=media&token=d7ca88ec-0291-4cdc-b7f5-6e2fc3bf97fc"
+            src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris_costa_1.jpeg?alt=media&token=40c9767e-3b7f-4981-b77d-7771150118cc"
           />
         </div>
       </div>
@@ -214,9 +229,9 @@
         ></div>
       </div>
       <div
-        class="flex flex-col md:flex-row justify-between items-center gap-12 sm:gap-8 md:gap-8 lg:gap-8 text-gray-800"
+        class="flex flex-col md:flex-row justify-center items-center gap-12 sm:gap-8 md:gap-8 lg:gap-8 text-gray-800 text-center"
       >
-        <div class="order-2 sm:order-1 md:order-1">
+        <!-- <div class="order-2 sm:order-1 md:order-1">
           <img
             alt="Dr. Amiris Costa"
             class="w-52 h-52 md:w-full md:h-full"
@@ -224,20 +239,27 @@
             height="400"
             src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris-costa.jpg?alt=media&token=d7ca88ec-0291-4cdc-b7f5-6e2fc3bf97fc"
           />
-        </div>
+        </div> -->
         <div
           class="order-1 sm:order-2 md:order-2 whitespace-pre-line max-w-2xl text-justify"
         >
-          Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
+            Psicólogo, Pós graduado em Terapia Comportamental Cognitivo, com MBA
           em Gestão Estratégica de Pessoas, e Pós em Projetos Sociais e Direitos
           Humanos. Realizei cursos extras de formação complementar nas áreas de
           transtornos de personalidade, neuropsicologia, psicologia social, e
-          gestão/líder de si mesmo. Atuo auxiliando as pessoas a entrarem em
+          gestão/líder de si mesmo.
+          <br>
+          <br>
+
+          Atuo auxiliando as pessoas a entrarem em
           contato com conteúdos que fogem à sua compreensão. Por serem muitas
           vezes conteúdos inconscientes, mas que interferem diretamente na sua
           maneira de agir, pensar e sentir. Que acabam se manifestando através
           da depressão, ansiedade, baixa autoestima, insegurança, automutilação,
-          transtornos alimentares, entre diversas outras. Procuro trabalhar para
+          transtornos alimentares, entre diversas outras.
+          <br>
+          <br>
+          Procuro trabalhar para
           que os pacientes consigam lidar com seus anseios, traumas,
           expectativas e barreiras impostas por elas mesmas e pelo mundo, no seu
           autoconhecimento e desenvolvimento pessoal/profissional, conectando-se
@@ -245,9 +267,11 @@
         </div>
       </div>
     </div>
+    <div id="formacoes"></div>
   </section>
 
   <section class="bg-white border-b py-8 px-5 sm:px-0 md:px-0 lg:px-0">
+
     <h2
       class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
     >
@@ -356,6 +380,7 @@
         </div>
       </div>
     </div>
+    <div id="enderecos"></div>
   </section>
 
   <section class="bg-white border-b py-8">
@@ -393,7 +418,6 @@
               </ul>
             </div>
 
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             <div *ngIf="apiLoaded" class="hidden sm:inline md:inline lg:inline">
               <google-map [center]="center" [zoom]="zoom">
                 <map-marker [position]="markerPosition"> </map-marker>
@@ -411,16 +435,6 @@
               </google-map>
             </div>
           </div>
-          <!-- <ul class="flex flex-col gap-4">
-            <li>
-              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
-              22260-080, Brasil
-            </li>
-            <li>
-              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
-              16 portaria B sala 217
-            </li>
-          </ul> -->
         </div>
         <div class="whitespace-pre-line max-w-2xl">
           <div class="flex flex-col justify-center items-center gap-5">
@@ -465,7 +479,7 @@
       </div>
     </div>
 
-    <div id="formacoes"></div>
+    <div id="contato"></div>
   </section>
 
   <!-- Change the colour #f8fafc to match the previous section colour -->
@@ -523,6 +537,16 @@
 
     <div class="flex justify-center items-center w-full">
       <button
+      (click)="instagramClick()"
+      class="bg-white  my-6 py-4 px-8 mx-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+    >
+      <div class="flex justify-between items-center gap-3 text-white">
+        <!-- <i class="bi bi-instagram" style="font-size: 2rem"></i> -->
+        <img src="./../assets/icons/linktree-logo-icon.svg" alt=""  width="32" height="48">
+        <p class="linktree-color">LinkTree</p>
+      </div>
+    </button>
+      <button
         (click)="instagramClick()"
         class="button-gradient my-6 py-4 px-8 mr-4 font-bold rounded-full focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
       >
@@ -557,7 +581,7 @@
           </div>
           <div class="cursor-pointer" (click)="instagramClick()">
             <i class="bi bi-instagram"></i>
-            amiriscosta_psico
+            amiriscosta_psi
           </div>
           <div>
             <i class="bi bi-whatsapp text-green-500"></i>
@@ -592,3 +616,4 @@
     </div>
   </footer>
 </div>
+
