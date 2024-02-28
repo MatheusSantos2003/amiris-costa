@@ -41,13 +41,6 @@ export class AppComponent implements OnInit {
 
 
   constructor(private httpClient: HttpClient) {
-    // this.apiLoaded = this.httpClient.jsonp('https://maps.googleapis.com/maps/api/js?key=AIzaSyCGEBvPMfkw-M73JRQA7JGU2MNSISImFVM', 'callback')
-    // .pipe(
-    //   map((val) =>{
-    //     console.log(val);
-    //   } true),
-    //   catchError((value) => of(false)),
-    // );
 
     this.httpClient.jsonp('https://maps.googleapis.com/maps/api/js?key=AIzaSyCGEBvPMfkw-M73JRQA7JGU2MNSISImFVM', 'callback').subscribe((value: any) => {
       console.log(value);
@@ -65,11 +58,11 @@ export class AppComponent implements OnInit {
   }
 
   instagramClick() {
-    window.open('https://www.instagram.com/amiriscosta_psi/','_blank')
+    window.open('https://www.instagram.com/psiamiris/','_blank')
   }
 
   linktreeClick(){
-    window.open('https://linktr.ee/amiriscosta/','_blank')
+    window.open('https://linktr.ee/amiriscosta','_blank')
   }
 
   scrollTo(id: string) {

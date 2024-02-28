@@ -383,104 +383,7 @@
     <div id="enderecos"></div>
   </section>
 
-  <section class="bg-white border-b py-8">
-    <h2
-      class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
-    >
-      Endereços:
-    </h2>
-    <div class="w-full mb-4">
-      <div
-        class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-      ></div>
-    </div>
 
-    <div
-      class="flex justify-center items-center text-black mt-5 pt-5 text-center"
-    >
-      <h4 class="text-3xl">
-        Atendimento Online e presencial nos endereços abaixo:
-      </h4>
-    </div>
-
-    <div class="container max-w-5xl mx-auto m-8">
-      <div
-        class="flex flex-col sm:flex-row md:flex-row lg:flex-row justify-center items-center gap-8 py-8 text-gray-800 custom-ul"
-      >
-        <div class="whitespace-pre-line max-w-2xl">
-          <div class="flex flex-col justify-center items-center gap-5">
-            <div class="mx-5 sm:my-4 md:my-4 lg:my-4">
-              <ul>
-                <li>
-                  Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro -
-                  RJ,22260-080, Brasil.
-                </li>
-              </ul>
-            </div>
-
-            <div *ngIf="apiLoaded" class="hidden sm:inline md:inline lg:inline">
-              <google-map [center]="center" [zoom]="zoom">
-                <map-marker [position]="markerPosition"> </map-marker>
-              </google-map>
-            </div>
-
-            <div *ngIf="apiLoaded" class="sm:hidden md:hidden lg:hidden">
-              <google-map
-                [center]="center"
-                height="200"
-                width="300"
-                [zoom]="zoom"
-              >
-                <map-marker [position]="markerPosition"> </map-marker>
-              </google-map>
-            </div>
-          </div>
-        </div>
-        <div class="whitespace-pre-line max-w-2xl">
-          <div class="flex flex-col justify-center items-center gap-5">
-            <div class="mx-5 sm:my-4 md:my-4 lg:my-4">
-              <ul>
-                <li>
-                  BARRA DA TIJUCA,Shopping Downtown, Avenida das Américas, 500,
-                  bloco 16, portaria B, sala 217.
-                </li>
-              </ul>
-            </div>
-
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0699417633236!2d-43.19081948554891!3d-22.9476511450984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997feed0a934a3%3A0x9c2a0d8091da5365!2sTv.%20Visc.%20de%20Morais%2C%20226%20-%20Botafogo%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022260-080!5e0!3m2!1spt-BR!2sbr!4v1675293508511!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-            <div *ngIf="apiLoaded" class="hidden sm:inline md:inline lg:inline">
-              <google-map [center]="center2" [zoom]="zoom2">
-                <map-marker [position]="markerPosition2"></map-marker>
-              </google-map>
-            </div>
-
-            <div *ngIf="apiLoaded" class="sm:hidden md:hidden lg:hidden">
-              <google-map
-                [center]="center2"
-                height="200"
-                width="300"
-                [zoom]="zoom2"
-              >
-                <map-marker [position]="markerPosition2"></map-marker>
-              </google-map>
-            </div>
-          </div>
-          <!-- <ul class="flex flex-col gap-4">
-            <li>
-              Tv. Visc. de Morais, 226 - Botafogo, Rio de Janeiro - RJ,
-              22260-080, Brasil
-            </li>
-            <li>
-              BARRA DA TIJUCA Shopping Downtown Avenida das Américas 500 bloco
-              16 portaria B sala 217
-            </li>
-          </ul> -->
-        </div>
-      </div>
-    </div>
-
-    <div id="contato"></div>
-  </section>
 
   <!-- Change the colour #f8fafc to match the previous section colour -->
   <svg
@@ -581,7 +484,7 @@
           </div>
           <div class="cursor-pointer" (click)="instagramClick()">
             <i class="bi bi-instagram"></i>
-            amiriscosta_psi
+            psiamiris
           </div>
           <div>
             <i class="bi bi-whatsapp text-green-500"></i>
