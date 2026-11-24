@@ -137,6 +137,7 @@
     </div>
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
+  <main>
   <!--Hero-->
   <div class="pt-24">
     <div
@@ -150,7 +151,7 @@
 
         <h1 class="text-5xl font-bold">Amiris Costa</h1>
         <h2 class="text-2xl">Psicólogo Clinico</h2>
-        <h3 class="text-1xl">CRP 06/119810</h3>
+        <p class="text-1xl">CRP 06/119810</p>
         <blockquote>Seja tudo aquilo que quiser ser!!!</blockquote>
 
         <button (click)="scrollTo('contato')" class="my-4 p-4 bg-white text-green-500 rounded-full">
@@ -166,11 +167,11 @@
         <div class="md:ml-60 py-9">
           <img
             class="rounded-full"
-            alt="Dr. Amiris Costa"
+            alt="Amiris Costa, psicólogo clínico"
             width="400"
             height="400"
-            loading="lazy"
-            src="https://firebasestorage.googleapis.com/v0/b/amiriscosta-ce234.appspot.com/o/amiris_costa_1.jpeg?alt=media&token=40c9767e-3b7f-4981-b77d-7771150118cc"
+            fetchpriority="high"
+            src="assets/amiris_costa_1.jpeg"
           />
         </div>
       </div>
@@ -313,11 +314,11 @@
   </section>
 
   <section class="bg-white border-b py-8">
-    <h4
+    <h2
       class="w-full my-2 text-5xl font-medium leading-tight text-center text-gray-800"
     >
       Abordagens terapêuticas:
-    </h4>
+    </h2>
     <div class="w-full mb-10">
       <div
         class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
@@ -358,11 +359,11 @@
 
   <section class="bg-white border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
-      <h4
+      <h2
         class="w-full my-2 text-5xl font-medium leading-tight text-center text-gray-800"
       >
         Ofereço ajuda para:
-      </h4>
+      </h2>
       <div class="w-full mb-10">
         <div
           class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
@@ -470,6 +471,7 @@
       </button>
     </div>
   </section>
+  </main>
   <!--Footer-->
   <footer class="bg-gray-100 h-full text-black pt-5">
     <div
